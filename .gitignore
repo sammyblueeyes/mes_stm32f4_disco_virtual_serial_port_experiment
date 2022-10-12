@@ -1,0 +1,5 @@
+*.launch
+*.swp
+Debug/
+.settings
+.metadata
