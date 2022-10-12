@@ -31,6 +31,10 @@
 
 /* USER CODE BEGIN INCLUDE */
 
+// User to implement this
+void ReceiveUSBData(uint8_t* Buf, uint32_t Len);
+
+
 /* USER CODE END INCLUDE */
 
 /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY

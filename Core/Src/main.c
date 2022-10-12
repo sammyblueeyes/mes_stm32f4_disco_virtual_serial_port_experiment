@@ -22,6 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "console.h"
 
 /* USER CODE END Includes */
 
@@ -74,6 +75,7 @@ int main(void)
 
   /* USER CODE BEGIN Init */
 
+
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -88,6 +90,9 @@ int main(void)
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
+  ConsoleInit();
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -97,6 +102,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  ConsoleProcess();
+
+	  HAL_Delay(5);
   }
   /* USER CODE END 3 */
 }
